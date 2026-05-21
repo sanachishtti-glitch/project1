@@ -5,170 +5,228 @@
 
 #parentcointainer5{
     display: flex;
-  align-items: center;
+    align-items: center;
     justify-content: center;
-width: 100%;
-
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
-
 
 .orbitcointainer5{
-width: 250px;
-height: 250px;
-position: relative;
-
-
+    width: 250px;
+    height: 250px;
+    position: relative;
 }
-#timer5{
 
+#timer5{
     font-size: 40px;
     text-align: center;
-width: 100px;
-height: 55px;
-position: absolute;
-padding-top: 20px;
-/* right: 40%; */
-left: 27%;
-transform: translate(10%);
+    width: 100px;
+    height: 55px;
+    position: absolute;
+    padding-top: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .path5{
-
-width: 100%;
-height: 100%;
-border-radius: 100%;
-border: 10px solid rgba(113, 125, 113, 0.984);
-animation: rotatee 5s linear infinite ;
-position: relative;
-  
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid rgba(113, 125, 113, 0.984);
+    animation: rotatee 5s linear infinite;
+    position: relative;
+    box-sizing: border-box;
 }
+
 .planet5{
-position: absolute;
-width: 20px;
-height: 20px;
-border-radius: 50%;
-background: #000;
-  top: -10px;   /* half height */
-  left: 30%;
-  transform: translatey(5%);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @keyframes rotatee {
- from{ transform:rotate(0deg);}
- to{transform:rotate(360deg);}
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
-
-
 
 #bigchild5{
     display: flex;
-  justify-content: center;
-  align-items: center;
-height: 50vh;
-    width: 80vh;
-/* background: #a39898; */
-/* box-shadow: 0px 5px 20px 5px ; */
-
-
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .cointainerbtn5{
     display: flex;
-    align-items:flex-end;
     justify-content: center;
-    width: 80vh;
-background: #a39898;
-margin-top: 1px;
-
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background: #a39898;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-
-.btn15,.btn25{
- 
+.btn15,
+.btn25{
     font-size: 20px;
-height: 8vh;
-width: 50%;
-border-radius: 15px ;
-margin: 5px;
-
+    height: 55px;
+    width: 180px;
+    border-radius: 15px;
+    border: none;
 }
 
 
+   /* PROJECT 6 CLOCK */
 
-
-
-/* project 6 clock */
 
 #parentcointainer6{
-
-    width: 100vw;
-height: 80vh;
+    width: 100%;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    padding: 20px;
 }
-#childcointainer6{
-display: flex;
-justify-content: center;
-align-items: center;
 
+#childcointainer6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #clock6{
     padding-top: 120px;
     text-align: center;
-    box-shadow: inset 4px 6px 20px 5px rgb(0, 0, 0),
-            inset -8px -8px 15px 10px rgb(57, 53, 53);
+    box-shadow:
+        inset 4px 6px 20px 5px rgb(0, 0, 0),
+        inset -8px -8px 15px 10px rgb(57, 53, 53);
+
     border-radius: 50%;
-width: 300px;
-height: 300px;
-background:rgb(187, 189, 190);
+    width: 300px;
+    height: 300px;
+    background: rgb(187, 189, 190);
+    box-sizing: border-box;
 }
 
-/* project 5 and 6 is combine  */
+   /* COMBINED CONTAINER */
+
+
 #parentcointainer55{
-display: flex;
-justify-content: center;
-align-items: center;
-    /* background: #000; */
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 #parentcointainer56{
-
-width: 90vw;
-height: 90vh;
-background:#799896ff;
-border: 2px solid black;
+    width: 95%;
+    min-height: 90vh;
+    background: #799896ff;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
 }
-
 
 #cointainerbtn56{
-    margin-left: 30px;
-    margin-top: 50px;
-display: flex;
-justify-content: space-evenly;
-/* border: 2px solid black; */
-width: 60vw;
-height: 50px;
-padding: 2px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-#stopwatchbtn56,#timerbtn56{
-width: 150px;
-border-radius: 6px ;
-/* background: #7d8587; */
-border: none;
+#stopwatchbtn56,
+#timerbtn56{
+    width: 180px;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
 }
 
 .bbb6{
-
     background: #4890e7;
 }
 
 .bbb{
-/* color: #6c56fd; */
-background: #2f82e7;
+    background: #2f82e7;
+}
 
+
+/* mbl responsive */
+
+@media (max-width: 768px){
+
+    .orbitcointainer5{
+        width: 200px;
+        height: 200px;
+    }
+
+    #timer5{
+        font-size: 30px;
+        width: 90px;
+    }
+
+    #clock6{
+        width: 230px;
+        height: 230px;
+        padding-top: 90px;
+    }
+
+    .btn15,
+    .btn25,
+    #stopwatchbtn56,
+    #timerbtn56{
+        width: 100%;
+        max-width: 250px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .orbitcointainer5{
+        width: 170px;
+        height: 170px;
+    }
+
+    #timer5{
+        font-size: 24px;
+    }
+
+    #clock6{
+        width: 180px;
+        height: 180px;
+        padding-top: 70px;
+        font-size: 20px;
+    }
+
+    #parentcointainer56{
+        padding: 10px;
+    }
+
+    #cointainerbtn56{
+        gap: 10px;
+    }
 }
